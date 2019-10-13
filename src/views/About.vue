@@ -2,7 +2,25 @@
   <div>
     <div class="about">
       <navbar></navbar>
-      <h1>This is an about page</h1>
+      <div>
+        <b-jumbotron>
+          <template v-slot:header>Thankyou For Visit My Lab</template>
+
+          <template v-slot:lead>
+            Ini adalah website sederhana yang di buat untuk latihan
+          </template>
+
+          <hr class="my-4">
+
+          <p>
+            It uses utility classes for typography and spacing to space content out within the larger
+            container.
+          </p>
+
+          <b-button variant="primary" href="#">Do Something</b-button>
+          <b-button variant="success" href="#">Do Something Else</b-button>
+        </b-jumbotron>
+      </div>
     </div>
   </div>
 </template>

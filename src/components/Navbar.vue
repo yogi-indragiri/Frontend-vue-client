@@ -8,8 +8,6 @@
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
                     <b-nav-item :to="{ path: 'about' }">About</b-nav-item>
-                    <b-nav-item :to="{ path: 'register' }">Register</b-nav-item>
-                    <b-nav-item :to="{ path: 'register' }">Login</b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
@@ -19,12 +17,11 @@
                         <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
                     </b-nav-form>
 
-                    <b-nav-item-dropdown text="Lang" right>
-                        <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
-                    </b-nav-item-dropdown>
+                    <b-nav-form right>
+                        <b-nav-item :to="{ path: 'register' }">Register</b-nav-item>
+                        <b-nav-item :to="{ path: 'login' }">Login</b-nav-item>
+                    </b-nav-form>
+
 
                     <b-nav-item-dropdown right>
                         <!-- Using 'button-content' slot -->
