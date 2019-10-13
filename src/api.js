@@ -3,7 +3,7 @@ import axios from "axios";
 import store from "./store";
 import router from "./router";
 
-const API_URL = process.env.API_URL || "http://backendlogin.pro";
+const API_URL = process.env.API_URL || "http://api.yogitechlab.my.id";
 
 
 // `baseURL` is prepended to URLs passed to axios
